@@ -1,5 +1,7 @@
 {
+ codex/develop-ai-powered-marketing-web-app-7v5l6w
   "extends": ["next/core-web-vitals", "next/typescript"],
+main
   "rules": {
     "react/no-unescaped-entities": "off"
   }

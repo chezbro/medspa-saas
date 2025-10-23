@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Calendar, CreditCard, Home, Layers, Settings, Users } from 'lucide-react';
+import type { Route } from 'next';
+import type { LucideIcon } from 'lucide-react';
 import { clsx } from 'clsx';
 
 const links = [
@@ -12,7 +14,7 @@ const links = [
   { href: '/clients', label: 'Clients', icon: Users },
   { href: '/billing', label: 'Billing', icon: CreditCard },
   { href: '/settings', label: 'Settings', icon: Settings },
-];
+] satisfies Array<{ href: Route; label: string; icon: LucideIcon }>;
 
 export function Sidebar() {
   const pathname = usePathname();
